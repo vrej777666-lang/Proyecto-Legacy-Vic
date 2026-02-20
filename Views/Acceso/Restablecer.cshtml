@@ -19,16 +19,14 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Recuperacion de contraseña</h3></div>
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Recuperacion de Contraseña</h3></div>
                                 <div class="card-body">
-                                    <div class="small mb-3 text-muted">Ingrese su correo electronico y le enviaremos una contraseña temporal la cual debera cambiar.</div>
-                                    
+                                    <div class="small mb-3 text-muted">Ingrese su direccion de correo electronico y le enviaremos su nueva contraseña</div>
                                     <form action="@Url.Action("Restablecer","Acceso")" method="post">
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" name="correo" type="email" autocomplete="off" />
+                                            <input class="form-control" name="correo" type="email" placeholder="name@example.com" />
                                             <label for="inputEmail">Email</label>
                                         </div>
-
                                         @{
                                             if (ViewBag.Error != null)
                                             {
@@ -39,15 +37,14 @@
                                                 </div>
                                             }
                                         }
-
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a class="small" href="@Url.Action("Index","Acceso")">Regresar al login</a>
-                                            <button class="btn btn-primary" type="submit">Restablecer la contraseña</button>
+                                            <a class="small" href="@Url.Action("Index","Acceso")">Regresar al Inicio de Sesion</a>
+                                            <button class="btn btn-primary" type="submit">Restablecer Contraseña</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    @*<div class="small"><a href="register.html">Need an account? Sign up!</a></div>*@
+                                    
                                 </div>
                             </div>
                         </div>
@@ -71,5 +68,4 @@
         </div>
     </div>
     <script src="~/Scripts/bootstrap.bundle.js"></script>
-</body>
 </html>

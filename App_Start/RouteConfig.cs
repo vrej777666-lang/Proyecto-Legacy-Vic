@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace CapaPresentacionAdmin
+namespace CapaPresentacionTienda
 {
     public class RouteConfig
     {
@@ -16,7 +16,7 @@ namespace CapaPresentacionAdmin
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Acceso", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Tienda", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
